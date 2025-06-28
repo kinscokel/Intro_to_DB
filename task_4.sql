@@ -1,3 +1,13 @@
-USE alx_book_store;
--- show the full content of table books from the database 
-print(" show full content of the table books from database")
+ Retrieve full column details of the books table using INFORMATION_SCHEMA
+SELECT 
+    COLUMN_NAME,
+    COLUMN_TYPE,
+    IS_NULLABLE,
+    COLUMN_KEY,
+    COLUMN_DEFAULT,
+    EXTRA
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+WHERE 
+    TABLE_NAME = 'books'
+    AND TABLE_SCHEMA = DATABASE();
