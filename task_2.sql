@@ -1,4 +1,4 @@
--- Create Book table
+-- Create Books table
 CREATE TABLE books(
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     tittle VARCHAR(130),
