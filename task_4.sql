@@ -1,4 +1,4 @@
- Retrieve full column details of the books table using INFORMATION_SCHEMA
+ Retrieve full column details of the Books table in alx_book_store database
 SELECT 
     COLUMN_NAME,
     COLUMN_TYPE,
@@ -9,5 +9,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_NAME = 'books'
-    AND TABLE_SCHEMA = DATABASE();
+    TABLE_NAME = 'alx_book_store'
+    AND TABLE_NAME = 'Books';
